@@ -96,7 +96,6 @@ func updateAlbum(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-
 }
 
 func main() {
