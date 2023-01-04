@@ -13,7 +13,7 @@ There's no database connected to the project, all the data is inside of an Array
 ---
 
 ## Download
-<p>After install Git and Golang in you machine, follow the commands below to downaload the project.</p>
+<p>After install Git and Golang in you machine, follow the commands below to download the project.</p>
 
 ```bash
 # step 1: clone the repository
