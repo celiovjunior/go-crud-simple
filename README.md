@@ -5,16 +5,15 @@
 ---
 
 ## About
-<p>CRUD API server made with Golang for an album management system, using gorilla/mux package.</p>
-
-<p>To download and run this project, you must have GIT and Golang installed in your machine. Also, if you want to test the routes and methods, I recommend tools like Insomnia or Postman.</p>
-
-<p>There's no database connected to the project, all the data is inside of an Array. Main focus here was to build a server in Golang with Rest archtecture.</p>
+CRUD API server made with Golang for an album management system, using [gorilla/mux](https://github.com/gorilla/mux) package.<br>
+To download and run this project, you must have [GIT](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Golang](https://go.dev/learn/) installed in your machine.<br>
+Also, if you want to test the routes and methods, I recommend tools like [Insomnia](https://insomnia.rest/download) or [Postman](https://www.postman.com/downloads/).<br>
+There's no database connected to the project, all the data is inside of an Array. Main focus here was to build a server in Golang with Rest archtecture.
 
 ---
 
 ## Download
-<p>After installed Git and Golang in you machine, follow the commands below to downaload the project.</p>
+<p>After install Git and Golang in you machine, follow the commands below to downaload the project.</p>
 
 ```bash
 # step 1: clone the repository
@@ -41,7 +40,7 @@ Server is running at port 8080
 
 ## Exploring
 
-<p>The models are configured as structs, as you can see below</p>
+<p>The models were configured as structs, as you can see below</p>
 
 ```go
 // Model for ALBUM
@@ -67,4 +66,37 @@ type Artist struct {
     "artist": "di melo"
 }
 ```
+> Here some orientation of how to set the right router and method for the CRUD action.
 
+<table>
+    <tr>
+        <td>Action</td>
+        <td>HTTP Method</td>
+        <td>Router</td>
+    </tr>
+    <tr>
+        <td>Get the list with all albums</td>
+        <td><code>GET</code></td>
+        <td><code>"/albums"</code></td>
+    </tr>
+    <tr>
+        <td>Get the data of one Album</td>
+        <td><code>GET</code></td>
+        <td><code>"/albums/{id}"</code></td>
+    </tr>
+    <tr>
+        <td>Create a new Album</td>
+        <td><code>POST</code></td>
+        <td><code>"/albums"</code></td>
+    </tr>
+    <tr>
+        <td>Update data of one Album</td>
+        <td><code>PUT</code></td>
+        <td><code>"/albums/{id}"</code></td>
+    </tr>
+    <tr>
+        <td>Delete a specific album</td>
+        <td><code>DELETE</code></td>
+        <td><code>"/albums/{id}"</code></td>
+    </tr>
+</table>
