@@ -100,3 +100,8 @@ type Artist struct {
         <td><code>"/albums/{id}"</code></td>
     </tr>
 </table>
+
+---
+## Final
+
+<p>Any question about this project or if you want to know more about me and my skills, contact me sending an email to 📩 cl.juniorr@gmail.com </p>
